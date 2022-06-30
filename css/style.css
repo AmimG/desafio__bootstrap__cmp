@@ -351,6 +351,59 @@ a {
 .form__checkbox input {
   margin-right: 10px;
 }
+/*main resultados*/
+.section__rsl {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.rsl__ttl {
+  width: 80%;
+  display: flex;
+  align-self: center;
+}
+.rsl__ttl2 {
+  text-align: justify;
+}
+.rsl__ttl2 h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1px;
+}
+.rsl__ttl2 span {
+  font-size: 1.4rem;
+}
+.rsl__div {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  background-image: url(https://res.cloudinary.com/dgqkcp16g/image/upload/v1656368575/bg_o4h3of.webp);
+  box-shadow: 2px 2px black;
+}
+.rsl__div2 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 10px;
+  margin-block: 10px;
+  background-image: url(https://res.cloudinary.com/dgqkcp16g/image/upload/v1656368575/bgnav_fk4wh2.webp);
+  box-shadow: 2px 2px black;
+}
+.rsl__div3 {
+  width: 80%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-block: 5px;
+}
+.rsl__div3 span {
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
 /*footer*/
 .footer {
   width: auto;
@@ -646,6 +699,24 @@ a {
   .form__perfil {
     width: 85%;
   }
+  /*Resultados*/
+  .section__rsl {
+    width: 100%;
+  }
+  .rsl__ttl {
+    width: 100%;
+  }
+  .rsl__div {
+    width: 100%;
+  }
+  .rsl__div2 {
+    width: 28%;
+    padding: 5px;
+    margin-block: 5px;
+  }
+  .rsl__div3 {
+    width: 100%;
+  }
   /*footer*/
   .footer__legal span {
     font-size: 1.2rem;
@@ -726,6 +797,17 @@ a {
   .header h1 {
     font-size: 3rem;
   }
+  /*Resultados*/
+  .rsl__ttl {
+    width: 95%;
+  }
+  .rsl__div {
+    width: 98%;
+  }
+  .rsl__div3 span {
+    text-align: center;
+    align-self: center;
+  }
 }
 @media (max-width: 585px) {
   /*main*/
@@ -771,6 +853,25 @@ a {
   .ms-auto,
   .me-auto {
     margin-inline: auto;
+  }
+}
+@media (max-width: 480px) {
+  /*Resultados*/
+  .section__rsl {
+    width: 100%;
+  }
+  .rsl__ttl {
+    width: 100%;
+  }
+  .rsl__div {
+    width: 95%;
+  }
+  .rsl__div2 {
+    width: 28%;
+    padding: 5px;
+  }
+  .rsl__div3 span {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 417px) {

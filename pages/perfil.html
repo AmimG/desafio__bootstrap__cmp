@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar sesión | Central Sports</title>
+  <!--css bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!--css wow-->
+  <link rel="stylesheet" href="WOW-master/css/libs/animate.css" />
+  <!--my css-->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon"
+    href="https://res.cloudinary.com/dgqkcp16g/image/upload/v1656431826/central-sports-n-40x40_moh8ms.svg"
+    type="image/x-icon">
+</head>
+
+<body>
+  <div class="body">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand order-1 order-md-0 mx-auto" href="../index.html">
+          <img src="https://res.cloudinary.com/dgqkcp16g/image/upload/v1656431801/cs-titulo-500_oaprrr.svg"
+            alt="Logo Central Sports">
+          <img src="https://res.cloudinary.com/dgqkcp16g/image/upload/v1656431801/cs-titulo-400_abszfi.svg"
+            alt="Logo Central Sports">
+          <img src="https://res.cloudinary.com/dgqkcp16g/image/upload/v1656431801/cs-titulo-300_xj9s0v.svg"
+            alt="Logo Central Sports">
+          <img src="https://res.cloudinary.com/dgqkcp16g/image/upload/v1656431801/cs-titulo-200_acbsrn.svg"
+            alt="Logo Central Sports">
+          <img src="https://res.cloudinary.com/dgqkcp16g/image/upload/v1656431801/cs-titulo-150_ccqwhs.svg"
+            alt="Logo Central Sports">
+        </a>
+        <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="order-2 order-md-1 collapse navbar-collapse me-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav m-lg-auto m-md-auto order-3">
+            <li class="nav-item">
+              <a class="nav-link" href="resultados.html">Resultados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="perfil.html">Perfil</a>
+            </li>
+            <li class=" nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Fútbol
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Mercado de Fichajes</a></li>
+                <li><a class="dropdown-item" href="#">Noticias</a></li>
+                <li><a class="dropdown-item" href="#">Ligas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../esports/index-e.html">Central eSports</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="header">
+        <div class="header__div">
+          <h1>Iniciar sesión</h1>
+        </div>
+      </div>
+    </header>
+    <main class="main__ctc">
+      <section class="section__ctc">
+        <form class="form__ctc" action="#" id="sesion">
+          <div class="form__perfil">
+            <div class="form__img">
+              <img src="../multimedia/images/perfil-64x64.png" alt="" />
+            </div>
+            <div class="form__perfil2">
+              <label for="email">Email:</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="form__perfil2">
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" />
+            </div>
+            <div class="form__perfil2">
+              <div class="form__checkbox">
+                <input type="checkbox" id="seepassword" />
+                <label for="seepassword">Mostrar contraseña</label>
+              </div>
+            </div>
+            <div class="form__button">
+              <button class="button" type="submit">
+                <span>Iniciar sesión</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+  <!--script wow-->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!--script bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
