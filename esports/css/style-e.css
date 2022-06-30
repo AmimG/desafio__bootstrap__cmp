@@ -151,7 +151,6 @@ p {
   width: 100%;
   height: auto;
 }
-
 .main__e div {
   width: 96%;
   display: flex;
@@ -209,91 +208,18 @@ p {
 #footer {
   grid-area: footer;
 }
-.footer__e {
-  background-color: #6175b2;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  width: auto;
-  font-size: 1.4rem;
-  color: black;
+#header2 {
+  display: none;
 }
-.footer__e h4 {
-  margin-bottom: 20px;
+@media (max-width: 992px) {
+  #header {
+    display: none;
+  }
 }
-/*footer dirección*/
-.footer__addrs {
-  width: 20%;
-  max-width: 20%;
-  text-align: center;
-  padding: 20px;
-}
-.footer__addrs div {
-  width: 100%;
-}
-.footer__addrs img {
-  width: auto;
-  height: auto;
-}
-.footer__addrs address {
-  font-style: normal;
-}
-/*footer redes*/
-.footer__redes {
-  width: 20%;
-  max-width: 20%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-.div__redes {
-  width: auto;
-  max-width: 960px;
-  display: flex;
-  align-self: center;
-  margin-bottom: 20px;
-}
-.footer__redes a {
-  margin: 2.5px;
-}
-.footer__redes img {
-  width: 100%;
-  height: auto;
-}
-/*footer nav*/
-.footer__nav * {
-  padding-left: 0;
-}
-.footer__nav {
-  width: 20%;
-  max-width: 20%;
-  text-align: center;
-  padding: 10px;
-}
-.footer__nav li {
-  list-style: none;
-  margin-top: 5px;
-}
-.footer__nav a {
-  text-decoration: none;
-  color: black;
-}
-.footer__nav a:hover {
-  color: yellow;
-  font-weight: 500;
-  transition-delay: 250ms;
-}
-/*footer legal*/
-.footer__legal {
-  width: 20%;
-  max-width: 20%;
-  text-align: center;
-  padding: 10px;
-}
-.footer__legal span {
-  font-size: 1.4rem;
+@media (max-width: 991px) {
+  #header2 {
+    display: flex;
+  }
 }
 @media (max-width: 768px) {
   #body {
@@ -303,16 +229,12 @@ p {
     grid-template-columns: 20vw 60vw 20vw;
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
-      "header nav nav"
+      "nav nav nav"
       "publicidad2 publicidad2 publicidad2"
       "main main publicidad"
       "footer footer footer";
   }
   /*header*/
-  #header {
-    background-color: #0a0021;
-    border-bottom: 0.5px solid black;
-  }
   .header__e {
     padding: 2.5px;
     display: flex;
@@ -321,10 +243,10 @@ p {
   .header__e a {
     font-size: 1.5rem;
   }
+  /*nav*/
   .nav__e a {
     font-size: 1rem;
   }
-  /*nav*/
   .nav__e a:hover {
     transition-delay: 1ms;
   }
@@ -344,7 +266,6 @@ p {
   }
   #publicidad2 {
     grid-area: publicidad2;
-    background-color: #6175b2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -368,36 +289,6 @@ p {
   .aside__e2 img {
     width: 10%;
   }
-  /*footer*/
-  .footer__nav a:hover {
-    transition-delay: 1ms;
-  }
-  .footer__e {
-    font-size: 1.2rem;
-  }
-  .footer__addrs {
-    width: 25%;
-    max-width: 20%;
-    text-align: center;
-    padding: 20px;
-  }
-  /*footer redes*/
-  .footer__redes {
-    width: 25%;
-  }
-  .footer__nav {
-    width: 25%;
-    max-width: 20%;
-    text-align: center;
-    padding: 10px;
-  }
-  /*footer legal*/
-  .footer__legal {
-    width: 25%;
-  }
-  .footer__legal span {
-    font-size: 1.1rem;
-  }
 }
 @media (max-width: 600px) {
   #body {
@@ -414,10 +305,6 @@ p {
       "footer";
   }
   /*header*/
-  #header {
-    background-color: rgba(19, 1, 64, 1);
-    border-bottom: none;
-  }
   .header__e {
     padding-top: 5px;
     display: flex;
@@ -433,19 +320,6 @@ p {
   }
   /*publicidad*/
   #publicidad {
-    display: none;
-  }
-  /*footer*/
-  .footer__legal {
-    display: none;
-  }
-}
-@media (max-width: 571px) {
-  /*footer*/
-  .footer__addrs {
-    display: none;
-  }
-  .display2 {
     display: none;
   }
 }
@@ -484,13 +358,6 @@ p {
   }
   .article__e2 {
     width: 49%;
-  }
-  /*footer*/
-  .footer__addrs {
-    display: none;
-  }
-  .display2 {
-    display: none;
   }
   /*publicidad*/
   #publicidad2 {
@@ -561,17 +428,13 @@ p {
     grid-template-columns: 20vw 60vw 20vw;
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
-      "header nav nav"
+      "nav nav nav"
       "main main main"
       "main main main"
       "footer footer footer";
   }
   /*header*/
-  #header {
-    background-color: #0a0021;
-    border-bottom: 0.5px solid black;
-  }
-  #bodylol #header span {
+  #bodylol #header2 span {
     font-size: 1.5rem;
   }
   /*nav*/
@@ -584,10 +447,6 @@ p {
   #bodylol #nav li {
     text-align: center;
     align-self: center;
-  }
-  /*footer legal*/
-  .footer__legal {
-    display: none;
   }
 }
 @media (max-width: 600px) {
